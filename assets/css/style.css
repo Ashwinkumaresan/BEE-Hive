@@ -1,0 +1,84 @@
+@import url('https://fonts.cdnfonts.com/css/devil-breeze');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.cdnfonts.com/css/bimbo');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #1B1B1B;
+    color: #eef8ce;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-image:
+    url("../../img/bg.png"),
+    repeating-linear-gradient(
+        to right, transparent 0 500px, #73814B33 500px 501px
+    );
+    background-size: 100%;
+    overflow-x: hidden;
+}
+*::-webkit-scrollbar {
+    width: 0;
+}
+.section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#section1 .title {
+    color: #d1ff48;
+    font-size: 11em;
+    font-family: "devil breeze";
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+#section1 .title::before {
+    content: attr(data-before);
+    position: absolute;
+    inset: 0.66em 0 0 0;
+    z-index: -1;
+    color: #445022;
+}
+#section3 .content-fit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+#section3 table {
+    width: min(800px, 90vw);
+    padding-top: 2em;
+    font-size: 2em;
+    margin: auto;
+}
+#section3 table td {
+    padding-block: 0.5em;
+    border-bottom: 1px dashed #445022;
+}
+#section3 table td:nth-child(1) {
+    text-align: left;
+    font-weight: 500;
+}
+#section3 table td:nth-child(2) {
+    text-align: right;
+    font-weight: 200;
+}
+#section3 .sign {
+    font-family: 'Bimbo', sans-serif;
+    font-size: 10em;
+}
+#container3D {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    pointer-events: none;
+}
